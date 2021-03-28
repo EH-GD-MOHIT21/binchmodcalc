@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Number System | Chmod Permission</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+        <label class="logo">Converter</label>
+        <ul>
+            <li><a class="active" href="https://www.youtube.com/channel/UC41ksagdFtAUKfSsNzGubhA" target="_blank">Youtube</a></li>
+            <li><a href="https://github.com/EH-GD-MOHIT21/" target="_blank">GitHub</a></li>
+            <li><a href="https://www.youtube.com/channel/UC41ksagdFtAUKfSsNzGubhA" target="_blank">Fb</a></li>
+            <li><a href="https://www.youtube.com/channel/UC41ksagdFtAUKfSsNzGubhA" target="_blank">Insta</a></li>
+            <li><a href="https://www.linkedin.com/in/mohit-satija-4b8732209" target="_blank">Linkedin</a></li>
+        </ul>
+    </nav>
+
+    <div class="draw">
+        <img src="mohit.png" width=500px>
+    </div>
+
+    <div class="container">
+        <p>
+            <label>Enter the Decimal Number:</label>
+            <input type="number" required id="input">
+        </p>
+        <p><label>Available Choices:</label>
+            <select name="select" id="select_choice">
+                <option value="Binary">Binary</option>
+                <option value="Octal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+                <option value="Decimal">Decimal</option>
+            </select></p>
+        <p><label>Result:</label><input type="text" id="result" disabled></p>
+        <button type="submit" onclick="calc()">Calculate</button>
+
+    </div>
+
+    <div class="myhead">
+        <h1>Linux Chmod Calculator</h1>
+    </div>
+
+    <div class="chmod-calc">
+        <form>
+            <div class="own">
+                <h1>Owner</h1>
+                <p><label>Read<input type="checkbox" onclick="chmod_calc()" id="oread"></label></p>
+                <p><label>Write<input type="checkbox" onclick="chmod_calc()" id="owrite"></label></p>
+                <p><label>Execute<input type="checkbox" onclick="chmod_calc()" id="oexec"></label></p>
+            </div>
+            <div class="grp">
+                <h1>Group</h1>
+                <p><label>Read<input type="checkbox" onclick="chmod_calc()" id="gread"></label></p>
+                <p><label>Write<input type="checkbox" onclick="chmod_calc()" id="gwrite"></label></p>
+                <p><label>Execute<input type="checkbox" onclick="chmod_calc()" id="gexec"></label></p>
+            </div>
+            <div class="pub">
+                <h1>Public</h1>
+                <p><label>Read<input type="checkbox" onclick="chmod_calc()" id="pread"></label></p>
+                <p><label>Write<input type="checkbox" onclick="chmod_calc()" id="pwrite"></label></p>
+                <p><label>Execute<input type="checkbox" onclick="chmod_calc()" id="pexec"></label></p>
+            </div>
+        </form>
+
+
+        <div class="resultbox">
+            <label>Result: <input type="text" disabled id="chmod_res"></label>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
